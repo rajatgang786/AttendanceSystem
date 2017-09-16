@@ -1,0 +1,757 @@
+ /* =Reset default browser CSS.
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	
+}
+body {
+	line-height: 1;
+	overflow-x:hidden;
+	font-family: Helvetica, sans-serif;
+	
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none;
+}
+div a {
+	color: #222;
+}
+
+a:visited {
+	color: #222;
+}
+a:hover {
+	color: #a8d1ff;
+}
+
+* {-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;}
+	
+
+/* slightly enhanced, universal clearfix hack */
+.clearfix::after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* ---------------------------------------------------------------------------- */
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+
+.outer_div.form-success .container h1 {
+  -webkit-transform: translateY(85px);
+      -ms-transform: translateY(85px);
+          transform: translateY(85px);
+}
+.border {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 0;
+  height: 400px;
+  text-align: center;
+}
+.border h1 {
+  font-size: 40px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-put;
+          transition-timing-function: ease-in-put;
+  font-weight: 200;
+}
+
+
+
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -160px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+}
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+}
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+}
+.bg-bubbles li:nth-child(9) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.bg-bubbles li:nth-child(10) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+.bg-bubbles li:nth-child(11) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}.bg-bubbles li:nth-child(12) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}
+
+
+
+
+/*---------------------------outer div-------------------------------------*/
+#outer_div{
+	border: 2px solid black;
+	height: 900px;
+	width: 1300px;
+
+}
+
+/*------------------Front Page Background--------------------------------------*/
+#border{
+	border: 2px solid black ;
+	height: 400px;
+	width: 1050px;
+	margin-top: 80px;
+	margin-left: 150px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+	position: absolute;
+	opacity: .5;
+	z-index: -1;
+
+}
+.grid{
+    background-repeat: repeat;
+    background-attachment: fixed;
+	background-image: url('images/grid.png');
+	width: 100%;
+	height: 100%;
+	}
+#text{
+	height: 100px;
+	position: absolute;
+    left: 350px;
+    top: 175px;
+    color: blue;
+}
+
+#register{																					/*includes sign up and login div*/
+	height: 150px;
+	vertical-align: center;
+	border: 2px solid purple;
+	margin-top: 550px;
+	width: 800px;
+	position: relative;
+	margin-left: 300px;
+	display: block;
+}
+
+#login_div{																					/*-------contains login div--------------*/
+    width: 200px;
+     border: 2px solid black;
+     float: left;
+ 	height: 110px;
+ 	margin-left: 100px;
+ 	margin-top: 10px;
+}
+
+#login_img{																			/*login image*/
+	height: 80px;
+	width: 150px;
+	/*position: absolute;*/
+	margin-top: 10px;
+	border: 2px solid green;
+	margin-left: 20px;
+
+	
+}
+
+/*#login_button {  
+  margin-top: 150px;  
+  width: 119px;  
+  height: 125px;  
+  background-color: #C6C6C6;  
+  margin-left: 150px;
+  position: absolute;
+} */ 
+
+
+#sign_div{
+	 margin-left: 300px;																	/* sign up div red color*/
+	 width: 200px;
+     border: 2px solid red;
+     height: 110px;
+     float: left;
+     margin-top: 100px;
+}
+#signup_img{
+	height: 80px;																			/*sign up image*/
+	width: 150px;
+	margin-top: 10px;
+	border: 2px solid blue;
+	margin-left: 20px;
+}
+#admin_div{
+	margin-left: 50px;																		/* admin div red color*/
+	 width: 200px;			
+     border: 2px solid red;
+     height: 110px;
+     float: left; 
+}
+#admin_img{																					/*admin image on front page*/
+	height: 80px;
+	width: 150px;
+	margin-top: 5px;
+	border: 2px solid blue;
+	margin-left: 30px;
+	float: left;
+}
+
+
+#Teacher_login_text{																					/*Teacher login text*/
+	text-align: center;
+	vertical-align: middle;
+	padding: 50px;
+	font-family: "sans-serif", cursive ;
+	width: 10px;
+	z-index: 1;
+}
+#login_box{																								/*teacher login div*/
+	height: 160px;
+	width: 1200px;
+	margin-top: 40px;
+	border: 2px solid black;
+	display: block;
+	position: relative; 
+	margin-left: 50px;
+
+}
+#teacher_login{																						/*- Teacher login div by default hidden*/
+	height: 140px;
+	width: 300px;
+	margin-top: 10px;
+	margin-left: 100px;
+	border: 2px solid gold;
+	display: none;
+	position: absolute;
+}
+#admin_login{																				/*- Admin login div by default hidden*/
+
+	height: 140px;
+	width: 300px;
+	margin-top: 10px;
+	border: 2px solid gold;
+	margin-left: 850px;
+	display: none;
+	float: left;
+	position: absolute;
+}
+#submit_button{
+	margin-left: 40px;
+}
+
+/*-----------------------Sign Up Page -------------------------------------------------*/
+#wrapper{
+	height: 600px;
+	width: 1350px;
+	border: 2px solid blue;
+	margin-top: 100px;
+	position: relative;
+}
+/*-----------------------Left Div ------------------------------------------------*/
+#left_div{
+	height: 180px;
+	width: 180px;
+	border: 2px solid red;
+	position: absolute;
+}
+/*-----------------------Left Image Div ------------------------------------------------*/
+#image{
+	height:180px;
+	width: 180px;
+	border: 2px solid red;
+	position: absolute;
+}
+/*-----------------------Center Div ------------------------------------------------*/
+#sign_up{
+
+	height: 600px;
+	width: 750px;
+	margin-left: 182px;
+	position: absolute;
+	border: 2px solid black;
+	box-shadow: 10px 10px 5px #888888;
+}
+#right_div
+{
+	height:180px;
+	width: 180px;
+	border: 2px solid green;
+	position: absolute;
+	margin-left: 942px;
+}
+#button{
+	position: absolute;
+	margin-left:1150px;
+	margin-top: 200px; 
+}
+
+
+
+/*.div{
+		height: 100px;
+		width: 100px;
+		border: 2px solid blue;
+	}*/
+
+/*----------------Student Details ----------------------------*/
+#outer_big_div{
+
+	height: 600px;
+	width: 1350px;
+	border: 2px solid blue;
+	margin-top: 100px;
+	position: relative;
+}
+/*#left_inner_div{
+	height: 180px;
+	width: 180px;
+	border: 2px solid red;
+	position: absolute	
+}
+#button_inner_div{
+	position: absolute;
+	margin-left:5px;
+	margin-top: 200px;
+}*/
+
+
+/*-------------------------------------------Admin Page -------------------------------------*/
+#admin_page_outer_div{
+
+	height: 900px;
+	width: 1300px;
+	border: 2px solid black;
+}
+
+#student_profile_image_div{											/*#student_profile_image_div*/
+	height: 100px;
+	width: 500px;
+	border: 2px solid #DAF6FF;
+	margin-left: 400px;
+	margin-top: 150px;
+	display: inline-block;
+}
+#student_profile_image{												/*Student_profile_image*/
+
+	height: 90px;
+	width: 90px;
+	display: inline-block;
+
+}
+#student_profile_text{												/*Student Profile text */
+	font-family: "sans-serif", cursive ;
+	height: 90px;
+	width: 180px;
+	margin-left: 60px;
+	margin-top: 50px;
+	position: absolute;
+	display: inline-block;
+}
+#components_of_student_div{											/*components_of_student_div contains all hiddn div*/
+	height: 150px;
+	width: 800px;
+	display: block;
+	border: 2px solid black;
+	margin-left: 300px;
+	margin-top: 20px; 
+	display: none;
+}
+#student_sign_up_div{												/*Student sign up div by default hidden*/
+	height: 120px;
+	width: 180px;
+	margin-top: 5px;
+	margin-left: 50px;
+	border: 2px solid purple;
+	float: left;
+	/*display: none;*/
+}
+#student_sign_up_image{												/*Student sign up div by default hidden*/
+	height: 90px;
+	width: 90px;
+}
+#student_sign_up_text{
+	font-family: "sans-serif", cursive;
+}
+
+#student_delete_div{												/*Remove student deails div by dfault hidden*/
+	height: 120px;
+	width: 190px;
+	margin-top: 5px;
+	margin-left: 60px;
+	border: 2px solid purple;
+	float: left;	
+}
+#student_delete_image{												/*Delete Student details image*/
+	height: 90px;
+	width: 90px;
+}
+#student_edit_div{													/*Edit student details div*/
+	height: 120px;
+	width: 190px;
+	margin-top: 5px;
+	margin-left: 70px;
+	border: 2px solid purple;
+	float: left;
+	/*display: none;*/	
+}
+#student_edit_image{												/*Edit student details image*/
+	height: 90px;
+	width: 90px;
+}
+/* --------------------------------------------------------------------------------------------------------------*/
+#teacher_profile_image_div{											/*teacher_profile_image_div*/
+	height: 100px;
+	width: 500px;
+	border: 2px solid #BFF6FF;
+	margin-left: 400px;
+	margin-top: 100px;
+	position: relative;
+}
+#teacher_profile_image{												/*teacher_profile_image*/
+	height: 90px;
+	width: 90px;
+	display: inline-block;
+}
+#teacher_profile_text{												/*Teacher Profile text */
+	font-family: "sans-serif", cursive ;
+	height: 90px;
+	width: 180px;
+	margin-left: 60px;
+	margin-top: 50px;
+	position: absolute;
+	display: inline-block;
+}
+
+#components_of_teacher_div{											/*components_of_teacher_div contains all hiddn div*/
+	height: 150px;
+	width: 800px;
+	display: block;
+	border: 2px solid black;
+	margin-left: 300px;
+	margin-top: 20px;
+	display: none;
+}
+#teacher_sign_up_div{												/*Teacher sign up div by default hidden*/
+	height: 120px;
+	width: 180px;
+	margin-top: 5px;
+	margin-left: 50px;
+	border: 2px solid purple;
+	/*display: none;*/
+	float: left;
+}
+#teacher_sign_up_image{												/*Teacher sign up div by default hidden*/
+	height: 90px;
+	width: 90px;
+}
+#teacher_sign_up_text{
+	font-family: "sans-serif", cursive ;
+}
+
+#teacher_delete_div{												/*Remove Teacher deails div by dfault hidden*/
+	height: 120px;
+	width: 190px;
+	margin-top: 5px;
+	margin-left: 70px;
+	border: 2px solid purple;
+	float: left;
+	/*display: none;*/	
+}
+#teacher_delete_image{												/*Delete Teacher details image*/
+	height: 90px;
+	width: 90px;
+}
+#teacher_edit_div{													/*Edit teacher details div*/
+	height: 120px;
+	width: 190px;
+	margin-top: 5px;
+	margin-left: 60px;
+	border: 2px solid purple;
+	/*display: none;*/	
+	float: left;
+}
+#teacher_edit_image{												/*Edit teacher details image*/
+	height: 90px;
+	width: 90px;
+}
+
+/*----------------------------------Attandance  Page --------------------------------*/
+.outer_div_attandance{
+	height: 800px;
+	width: 1600px;
+	border: 2px solid black;
+	text-align: center;
+	margin: 0 auto;
+}
+.single_div_attandance{
+	height: 200px;
+	width: 200px;
+	border: 2px solid blue;
+	margin-left: 50px;
+}
+.image_attandance{
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	border: 2px solid red;
+}
+.name{
+	height: 20px;
+	width: 20px;
+	font-family: "sans-serif", cursive ;
+	display: inline-block;
+	border: 2px solid black;
+}
+.inner_div_left{
+	float: left;
+	border: 2px solid gold;
+}
+.inner_div_right_checkbox{
+	float: left;
+	border: 2px solid silver;
+
+}
+/*--------------------------Header --------------------------------------*/
+#header_outer_div{
+	border: 2px solid black;
+	height: 100px;
+	width: 1500px;
+	display: block;
+}
+#header_background{
+	border: 2px solid blue;
+	height: 100px;
+	width: 2000px;
+	z-index: -1;
+	opacity: .7;
+}
+#header_background_image{
+	height: 90px;
+	width: 1400px;
+	float: left;
+	z-index: 1;
+}
+#header_img{
+	border: 2px solid blue;
+	height: 100px;
+	width: 100px;
+	margin-left: 50px;
+}
+/*-------------------------------------------------Attandance Page -------------------------------------*/
+#attandance_left_div{															/* Attandance left div*/
+	height: 180px;
+	width: 180px;
+	border: 2px solid red;
+	position: absolute;
+	margin-top: 100px;
+
+}
+#attandance_center_div{															/* Attandance center div*/
+	height: 600px;
+	width: 950px;
+	margin-left: 182px;
+	position: absolute;
+	border: 2px solid black;
+	box-shadow: 10px 10px 5px #888888;										
+	margin-top: 100px;
+}
+
+#attandance_form{	
+	border: 2px solid black;												/* Attandance form div*/
+	margin-top: 100px;
+	margin-left: 100px;
+	width: 500px;
+}
+
+/*--------------Report page------------*/
+#report_outer_div{															/*report_outer_div*/
+	height: 800px;
+	width: 1600px;
+	border: 2px solid black;
+}
+#report_inner_div{															/*report_inner_div*/
+	height: 100px;
+	width: 1500px;
+	border: 2px solid black;
+}
+#report_leftmost_div{
+	height: 100px;
+	width: 200px;
+	float: left;
+	border: 2px solid blue;
+}
+#report_left_div{															/*report_left_div*/
+	height: 100px;
+	width: 200px;
+	float: left;
+	border: 2px solid gold;
+}
+#report_center_div{															/*report_center_div*/
+	height: 100px;
+	width: 200px;
+	float: left;
+	border: 2px solid grey;
+}
+#report_right_div{															/*report_right_div*/
+	height: 100px;
+	width: 200px;
+	float: left;
+	border: 2px solid red;
+}											

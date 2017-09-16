@@ -1,0 +1,75 @@
+<!doctype html>  
+<html>  
+<head>  
+<meta charset="utf-8">  
+<title>Magic CSS</title>  
+<link rel="stylesheet" href="http://www.minimamente.com/example/magic_animations/css/magic.min.css">  
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>  
+  
+<style type="text/css">  
+.magicdiv1, .magicdiv2 {  
+  width: 50px;  
+  height: 50px;  
+  background-color: #C50003;  
+}  
+.magicdiv2 {  
+  margin-top: 13px;  
+}  
+.magicdiv3 {  
+  background-color: #45ADA8;  
+  width: 131px;  
+  height: 58px;  
+  margin-top: 14px;  
+}  
+.magicdiv4 {  
+  width: 200px;  
+  height: 75px;  
+  background-color: #594F4F;  
+  margin-top: 13px;  
+}  
+button {  
+  margin-top: 15px;  
+  width: 119px;  
+  height: 36px;  
+  background-color: #C6C6C6;  
+}  
+</style>  
+  
+  
+</head>  
+<body>  
+  
+  
+<div class="magicdiv1"></div>  
+<div class="magicdiv2"></div>  
+<div class="magicdiv3"></div>  
+<div class="magicdiv4"></div>  
+  
+  
+<button type="button">vanishOut</button>  
+  
+  
+<script>  
+$('.magicdiv1').hover(function () {  
+  $(this).addClass('magictime puffIn');  
+});  
+  
+  
+setTimeout(function(){  
+    $('.magicdiv2').addClass('magictime swap');  
+}, 3000);  
+  
+  
+$('.magicdiv3').hover(function () {  
+  $(this).addClass('magictime foolishOut');  
+});  
+  
+  
+$("button").click(function() {  
+  $(".magicdiv4").addClass('magictime vanishOut');  
+});  
+</script>  
+  
+  
+</body>  
+</html> 
